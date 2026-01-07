@@ -9,9 +9,9 @@ namespace Calculator
 {
     internal class ParsedOperation
     {
-        public double Number1 { get; set; }
-        public double Number2 { get; set; }
-        public char Operation { get; set; }
+        public double Number1 { get; }
+        public double Number2 { get; }
+        public char Operation { get; }
 
         public ParsedOperation(double number1, double number2, char operation)
         {
