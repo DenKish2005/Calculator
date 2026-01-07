@@ -9,7 +9,11 @@ while (true)
     history.Print();
     Console.WriteLine();
 
-    Console.WriteLine("Enter operation (or 'exit'):");
+    Console.WriteLine("Allowed Operations: '+, -, *, /, %'");
+    Console.WriteLine("Enter operation with two numbers (or 'exit'):");
+    Console.WriteLine("Example: -7.3 / -4");
+    Console.WriteLine();
+
     string input = Console.ReadLine() ?? "";
 
     if (input.IsExitCommand())
@@ -40,7 +44,7 @@ while (true)
     }
 
     Console.WriteLine();
-    Console.WriteLine("Press a key to continue");
+    Console.WriteLine("Press any key to continue");
 
     Console.ReadKey();
     Console.Clear();
