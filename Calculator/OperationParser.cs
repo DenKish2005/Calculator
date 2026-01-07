@@ -56,7 +56,7 @@ namespace Calculator
                             CultureInfo.InvariantCulture,
                             out double number1))
             {
-                throw new ArgumentException("First operand is not a valid number");
+                throw new ArgumentException("Operand is not a valid number");
             }
 
             return number1;
